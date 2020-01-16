@@ -77,7 +77,7 @@ blocklist.searchpage.insertAddBlockLinkInSearchResult = function(searchResult, h
   var insertLink = document.createElement('p');
   insertLink.innerHTML = chrome.i18n.getMessage("addBlocklist", hostlink);
   insertLink.style.cssText =
-    "color:#1a0dab;margin:0;text-decoration:underline;cursor: pointer;";
+    "color:#1a0dab;margin:0;text-decoration:underline;cursor: pointer;display:inline-block";
   searchResult.appendChild(insertLink);
 
   insertLink.addEventListener("click", function() {
